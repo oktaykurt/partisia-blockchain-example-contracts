@@ -2,6 +2,9 @@
 
 This repository contains example smart contracts for the Partisia Blockchain, showcasing various use cases and functionalities.
 
+Official documentation:
+https://partisiablockchain.gitlab.io/documentation/smart-contracts/compile-and-deploy-contracts.html
+
 ## Setup and Installation on Ubuntu
 
 This guide assumes you're using an Ubuntu system. Adjustments may be needed for other Linux distributions.
