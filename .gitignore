@@ -1,13 +1,16 @@
-# Rust / Cargo
-Cargo.lock
-target/
+# Rust-specific
+/target
+**/*.rs.bk
 
-# Expanded rust
-expanded.rs
+# Generated files
+/Cargo.lock
 
+# Editor directories and files
 .idea/
+*.swp
+*.swo
+.vscode/
 
-# Maven with auto-import, exclude module files
-*.iml
-
+# System files
+.DS_Store
 
