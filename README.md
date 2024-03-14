@@ -1,30 +1,63 @@
-# example-contracts
-The Partisia Blockchain Foundation provides the following reviewed smart contracts,
-as examples of real world problems with a blockchain solution.
-The easiest way of getting started coding smart contracts is to learn from concrete examples
-showing smart contracts solving problems similar to the one you need to solve.
+# Partisia Blockchain Example Contracts
 
-This repository contains multiple example smart contracts as a virtual cargo workspace.
-To compile all the contracts using the partisia-contract tool run:
+This repository contains example smart contracts for the Partisia Blockchain, showcasing various use cases and functionalities.
 
-    cargo partisia-contract build --release
+## Setup and Installation on Ubuntu
 
-To compile a single contract change directory to the specific contract and run the same command.
-For example:
+This guide assumes you're using an Ubuntu system. Adjustments may be needed for other Linux distributions.
 
-    cd token
-    cargo partisia-contract build --release
+### Prerequisites
 
-The compiled wasm/zkwa and abi files are located in
+- Git
+- Rust and Cargo
+- Node.js and npm (if interacting with contracts via JavaScript)
+- Docker (optional, for containerized environments)
 
-    target/wasm32-unknown-unknown/release
+### Installing Rust and Cargo
 
-To run the test suite, run the following command:
-    
-    ./run-java-tests.sh
+1. Install Rust and Cargo using rustup:
 
-To generate the code coverage report, run the following command:
-    
-    cargo partisia-contract build --coverage
+   ```sh
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
 
-The coverage report will be located in java-test/target/coverage
+   Follow the on-screen instructions to complete the installation.
+
+2. Configure your current shell to access cargo commands:
+
+   ```sh
+   source $HOME/.cargo/env
+   ```
+
+### Clone the Repository
+
+Clone this repository to your local machine:
+
+```sh
+git clone https://github.com/oktaykurt/partisia-blockchain-example-contracts.git
+cd partisia-blockchain-example-contracts
+```
+
+### Build the Contracts
+
+To compile the smart contracts, run:
+
+```sh
+cargo build --release
+```
+
+### Running Tests
+
+If your project includes tests, describe how to run them:
+
+```sh
+cargo test
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with your improvements.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
